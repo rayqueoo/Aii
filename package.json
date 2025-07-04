@@ -1,12 +1,25 @@
-
 {
   "name": "hashblockia-desktop",
   "version": "1.0.0",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.hashblockia.app",
+    "productName": "HashBlockIA",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
   },
   "dependencies": {
     "electron": "^25.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.3.0"
   }
 }
