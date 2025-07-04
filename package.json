@@ -1,0 +1,12 @@
+
+{
+  "name": "hashblockia-desktop",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^25.0.0"
+  }
+}
